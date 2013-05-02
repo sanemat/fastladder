@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.13'
+gem 'rails', '4.0.0.rc1'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -18,8 +18,8 @@ gem "mini_magick"
 gem "addressable", require: "addressable/uri"
 gem "settingslogic"
 
-gem 'sass-rails',   '~> 3.2.3'
-gem 'coffee-rails', '~> 3.2.1'
+gem 'sass-rails',   '>= 4.0.0.rc'
+gem 'coffee-rails', '>= 4.0.0.rc'
 
 gem 'i18n-js', github: 'fnando/i18n-js'
 
