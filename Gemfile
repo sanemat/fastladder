@@ -23,7 +23,7 @@ gem "settingslogic"
 gem 'sass-rails',   '>= 4.0.0.rc'
 gem 'coffee-rails', '>= 4.0.0.rc'
 
-gem 'i18n-js', github: 'fnando/i18n-js'
+gem 'i18n-js', github: 'fnando/i18n-js', branch: 'rewrite'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', :platforms => :ruby
