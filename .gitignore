@@ -11,3 +11,4 @@ db/*.sqlite3
 coverage
 .ruby-version
 .rbenv-gemsets
+*gemfile.lock
