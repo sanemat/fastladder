@@ -21,18 +21,18 @@ Fastladder::Application.routes.draw do
   post 'api/:action' => 'api'
 
   # other API call routes to blank page
-  match 'api/*_' => 'application#nothing'
+  match 'api/*_' => 'application#nothing', via: [:post, :get]
 
   # --------------------------------------------------------------------------------
   # other pages 
   # --------------------------------------------------------------------------------
-  get 'subscribe', to: 'subscribe#index'
+  get 'subscribe', to: 'subscribe#index', as: :subscribe_index
   get 'subscribe/*url', to: 'subscribe#confirm', as: :subscribe, format: false
   post 'subscribe/*url', to: 'subscribe#subscribe', format: false
-  match 'about/*url' => 'about#index', as: :about, format: false
-  match 'user/:login_name' => 'user#index', as: 'user'
-  match 'icon/*feed' => 'icon#get'
-  match 'favicon/*feed' => 'icon#get'
+  match 'about/*url' => 'about#index', as: :about, format: false, via: :get
+  match 'user/:login_name' => 'user#index', as: 'user', via: [:get, :post]
+  match 'icon/*feed' => 'icon#get', via: [:get, :post]
+  match 'favicon/*feed' => 'icon#get', via: [:get, :post]
 
   resource :members, only: :create
   get 'signup' => 'members#new', as: :sign_up
@@ -43,9 +43,9 @@ Fastladder::Application.routes.draw do
 
   root to: 'reader#welcome'
 
-  match 'reader' => 'reader#index'
-  match 'contents/guide' => 'contents#guide'
-  match 'contents/config' => 'contents#configure'
+  match 'reader' => 'reader#index', via: [:get, :post]
+  match 'contents/guide' => 'contents#guide', via: [:get, :post]
+  match 'contents/config' => 'contents#configure', via: [:get, :post]
   get 'share', to: 'share#index', as: 'share'
 
   get 'import', to: 'import#index'
@@ -57,9 +57,9 @@ Fastladder::Application.routes.draw do
   get 'account', to: 'account#index', as: 'account_index'
   get 'account/:action', to: 'account', as: 'account'
 
-  match 'rpc/:action' => 'rpc'
+  match 'rpc/:action' => 'rpc', via: [:get, :post]
 
   get 'utility/bookmarklet' => "utility/bookmarklet#index"
 
-  match ':controller(/:action(/:id))(.:format)'
+  match ':controller(/:action(/:id))(.:format)', via: [:get, :post]
 end
