@@ -38,6 +38,7 @@ group :development do
   gem 'annotate'
   gem 'quiet_assets'
   gem 'rails4_upgrade'
+  gem 'appraisal'
 end
 
 group :development, :test do

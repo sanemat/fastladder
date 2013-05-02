@@ -55,6 +55,9 @@ GEM
     addressable (2.3.3)
     annotate (2.5.0)
       rake
+    appraisal (0.5.2)
+      bundler
+      rake
     arel (3.0.2)
     builder (3.0.4)
     capybara (2.0.2)
@@ -255,6 +258,7 @@ PLATFORMS
 DEPENDENCIES
   addressable
   annotate
+  appraisal
   capybara
   coffee-rails (~> 3.2.1)
   coveralls
