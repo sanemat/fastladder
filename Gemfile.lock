@@ -1,9 +1,9 @@
 GIT
   remote: git://github.com/fastladder/opml.git
-  revision: 9f6eb1367b22e5f038de86f115fda434a773a3f2
+  revision: 745eb59963d25a1439d3f7591b5e0fb9e4025090
   specs:
     opml (1.0.0)
-      activesupport (~> 3.2.12)
+      activesupport (>= 3.2.12, < 4.1)
 
 GIT
   remote: git://github.com/fnando/i18n-js.git
