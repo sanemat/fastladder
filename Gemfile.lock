@@ -142,6 +142,8 @@ GEM
       faye-websocket (~> 0.4, >= 0.4.4)
       http_parser.rb (~> 0.5.3)
     polyglot (0.3.3)
+    protected_attributes (1.0.1)
+      activemodel (>= 4.0.0.beta, < 5.0)
     pry (0.9.12.1)
       coderay (~> 1.0.5)
       method_source (~> 0.8)
@@ -262,6 +264,7 @@ DEPENDENCIES
   nokogiri
   opml!
   poltergeist
+  protected_attributes
   pry-doc
   pry-rails
   quiet_assets

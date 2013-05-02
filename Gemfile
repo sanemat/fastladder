@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.0.0.rc1'
 gem 'activeresource', '>= 4.0.0.beta'
+gem 'protected_attributes'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
