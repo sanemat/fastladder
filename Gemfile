@@ -37,6 +37,7 @@ group :development do
   gem 'pry-doc'
   gem 'annotate'
   gem 'quiet_assets'
+  gem 'rails4_upgrade'
 end
 
 group :development, :test do
